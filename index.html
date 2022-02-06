@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Главная</title>
+
+</head>
+
+<body>
+
+<h1>Пример формы</h1>
+<h2>Основные элементы формы:</h2>
+<form action="/handler.php" method="post">
+    <h3>Однострочное поле ввода:</h3>
+    <label for="clientName" class="quastion">Ваше имя</label>
+    <input type="text" id="clientName" name="clientName" />
+    <hr />
+    <h3>Радиобаттоны:</h3>
+    <p class="question">Ваш пол:</p>
+    <input checked="checked" type="radio" value="Male" name="Gender"> Мужской
+    <input type="radio" value="Female" name="Gender"> Женский
+    <hr />
+    <h3>Чекбоксы:</h3>
+    <p class="question">Чем Вы увлекаетесь?</p>
+    <p><input type="checkbox" name="hobbies" value="IT, техника"> IT, техника</p>
+    <p><input type="checkbox" name="hobbies" value="Кулинария"> Кулинария</p>
+    <p><input type="checkbox" name="hobbies" value="Спорт"> Спорт</p>
+    <p><input type="checkbox" name="hobbies" value="Рукоделие"> Рукоделие</p>
+    <hr />
+    <h3>Выпадающий список:</h3>
+    <p class="question">Где Вы проживаете?</p>
+    <select name="town">
+        <option value="Novosibirsk">Новосибирск</option>
+        <option value="Kolcovo">Кольцово</option>
+        <option value="Berdsk">Бердск</option>
+    </select>
+    <hr />
+    <h3>Выпадающий список с множественным выбором:</h3>
+    <p class="question">Виды транспорта, на котором Вы чаще всего передвигаетесь?(можно выбрать несколько вариантов, удерживая клавишу CTRL или SHIFT)</p>
+    <select name="transport" size="3" multiple>
+        <option selected value="car">Автомобиль</option>
+        <option value="metro">Метро</option>
+        <option value="bus">Автобус</option>
+        <option value="tramway">Трамвай</option>
+    </select>
+    <hr />
+    <h3>Многострочное поле ввода:</h3>
+    <p class="question">Введите ваш отзыв:</p>
+    <p><textarea rows="5" cols="31" name="text"></textarea></p>
+    <button type="submit">Отправить форму</button>
+</form>
+<p id="next"><a href="http://localhost:63342/2-html/page2.html?_ijt=vfb70bjbp10e5ouoe2cnfii6ed&_ij_reload=RELOAD_ON_SAVE">Переход на страницу с html элементами</a></p>
+</body>
+
+</html>
